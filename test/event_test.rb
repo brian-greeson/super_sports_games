@@ -21,4 +21,10 @@ class EventTest < Minitest::Test
 
     assert_equal [1,10,100], event.ages
   end
+
+  def test_knows_max_age
+    event = Event.new("Billy's Bobsled Bomb", [1,10,100])
+
+    assert_equal 100, event.max_age
+  end
 end
