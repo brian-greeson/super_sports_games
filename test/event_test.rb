@@ -10,4 +10,9 @@ class EventTest < Minitest::Test
     assert_instance_of Event, event
   end
 
+  def test_it_has_a_name
+    event = Event.new("Billy's Bobsled Bomb")
+
+    assert_equal "Billy's Bobsled Bomb", event.name
+  end
 end
