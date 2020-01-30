@@ -35,8 +35,8 @@ class EventTest < Minitest::Test
   end
 
   def test_knows_average_age
-    event = Event.new("Billy's Bobsled Bomb", [1,10,100])
+    event = Event.new("Billy's Bobsled Bomb", [1,10,5])
 
-    assert_equal 44.33, event.average_age
+    assert_equal 5.33, event.average_age
   end
 end
