@@ -6,4 +6,9 @@ class Event
     @ages = ages
 
   end
+
+  def max_age
+    @ages.max
+  end
+  
 end
