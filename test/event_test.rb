@@ -15,4 +15,10 @@ class EventTest < Minitest::Test
 
     assert_equal "Billy's Bobsled Bomb", event.name
   end
+
+  def test_it_has_ages_array
+    event = Event.new("Billy's Bobsled Bomb", [1,10,100])
+
+    assert_equal [1,10,100], event.ages
+  end
 end
