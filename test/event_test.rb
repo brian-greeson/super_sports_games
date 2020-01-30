@@ -39,4 +39,10 @@ class EventTest < Minitest::Test
 
     assert_equal 5.33, event.average_age
   end
+
+  def test_knows_standard_deviation_of_ages
+    event = Event.new("Billy's Bobsled Bomb", [24, 30, 18, 20, 41])
+
+    assert_equal 8.28, event.standard_deviation_age
+  end
 end
